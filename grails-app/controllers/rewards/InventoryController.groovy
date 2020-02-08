@@ -8,7 +8,8 @@ class InventoryController {
 
     def edit() {
         def productName = "Breakfast Blend"
-        def sku = ""
+        def sku = "BB01"
+        [product:productName, sku:sku]
     }
 
     def remove() {
