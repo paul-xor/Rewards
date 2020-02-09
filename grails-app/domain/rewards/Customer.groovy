@@ -10,9 +10,9 @@ class Customer {
 
     static constraints = {
         phone()
-        firstName()
-        lastName()
-        email()
-        totalPoints()
+        firstName(nullable: true)
+        lastName(nullable: true)
+        email (email: true, blank: false)
+        totalPoints(nullable: true, max: 10)
     }
 }
